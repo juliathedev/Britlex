@@ -9,3 +9,188 @@ body {
     padding: 0;
     font-family: "Poppins", sans-serif;
 }
+h1, h2, h3, p {
+    padding: 0;
+    margin: 0;
+}
+h1{
+    color: #000;
+    font-size: 48px;
+    font-style: normal;
+    font-weight: 600;
+    line-height: 64px; /* 133.333% */
+}
+h2{
+    font-weight: 600;
+    font-size: 36px;
+    line-height: 80px;
+    color: black;
+}
+h3 {
+    color: #263238;
+    font-size: 22px;
+    font-style: normal;
+    font-weight: 600;
+    line-height: 80px; /* 363.636% */
+}
+a {
+    text-decoration: none;
+}
+a:hover {
+    color: #8F95A5;
+    cursor: pointer;
+}
+a:visited {
+    color: #263238;
+}
+.container {
+    max-width: 1600px;
+    width: 100%;
+    padding: 0 130px;
+    margin: 0 auto;
+}
+.text__body {
+    color: #8F95A5;
+}
+/* Menu */
+.header {
+    display: flex;
+    justify-content: space-between;
+    padding-top: 52px;
+    margin: 0 auto;
+}
+.menu {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+}
+.menu__container {
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+}
+.logo__container {
+    margin-right: 253px;
+}
+.menu__list {
+    padding: 0;
+    margin-right: 204px;
+}
+.menu__list:last-child {
+    padding-right: 0;
+}
+.menu__list li{
+    display: inline-block;
+    color: #263238;
+    margin-right: 36px;
+    font-size: 20px;
+    font-weight: 500;
+}
+.menu__list li a{
+    cursor: pointer;
+}
+.menu__list:last-child {
+    padding-right: 0;
+}
+.btn__secondary {
+    border-radius: 5px;
+    border: 2px solid #263238;
+    width: 220px;
+    height: 70px;
+    font-size: 24px;
+    font-style: normal;
+    font-weight: 400;
+    background-color: #fff;
+}
+.skills {
+}
+.skills__grid {
+}
+.skills__grid-item {
+}
+.speaking {
+}
+.skills__grid-image {
+}
+.skills__grid-content {
+}
+.btn {
+}
+.btn__primary {
+}
+.writing {
+}
+.reading {
+}
+.listening {
+}
+.about_us {
+}
+.about__text {
+}
+.about__headline {
+}
+.text__body {
+}
+.about__description {
+}
+.about__grid {
+}
+.about__grid-nums {
+}
+.about__grid-num {
+}
+.about__grid-text {
+}
+.about__img {
+}
+.pricing {
+}
+.pricing__headline {
+}
+.pricing__grid {
+}
+.pricing__grid-item {
+}
+.pricing__grid-img {
+}
+.pricing__grid-text {
+}
+.pricing__grid-headline {
+}
+.pricing__grid-description {
+}
+.pricing__grid-price {
+}
+.pricing__grid-num {
+}
+.pricing__grid-period {
+}
+.contact {
+}
+.contact__container-img {
+}
+.contact__img {
+}
+.contact__text {
+}
+.contact__headline {
+}
+.contact__description {
+}
+.contact__form {
+}
+.form-example {
+}
+.btn__form {
+}
+.footer {
+}
+.footer__logo {
+}
+.footer__img {
+}
+.footer__policy {
+}
+.footer__links {
+}
