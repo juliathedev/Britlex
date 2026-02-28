@@ -15,7 +15,7 @@ h1, h2, h3, p {
 }
 h1{
     color: #000;
-    font-size: 48px;
+    font-size: 64px;
     font-style: normal;
     font-weight: 600;
     line-height: 64px; /* 133.333% */
@@ -51,6 +51,10 @@ a:visited {
 }
 .text__body {
     color: #8F95A5;
+}
+.btn {
+    background-color: #263238;
+    color: #fff;
 }
 /* Menu */
 .header {
@@ -102,6 +106,58 @@ a:visited {
     font-weight: 400;
     background-color: #fff;
 }
+/* Hero */
+.hero {
+    margin-top: 113px;
+}
+.hero__wrapper {
+    display: flex;
+    justify-content: space-between;
+    flex-direction: row;
+}
+.hero__text {
+}
+.hero__headline {
+    text-transform: capitalize;
+    max-width: 386px;
+    width: 100%;
+    position: relative;
+}
+.mobile-break {
+    display: block;
+    padding-top: 14px;
+    margin-bottom: 16px;
+}
+.light-img {
+    position: absolute;
+    left: 34.49%;
+    top: 43%;
+}
+.hero__description {
+    margin-top: 48px;
+    font-size: 24px;
+    font-style: normal;
+    font-weight: 400;
+    line-height: normal;
+    max-width: 570px;
+    width: 100%;
+    margin-bottom: 65px;
+}
+.btn__header {
+    width: 438px;
+    height: 118px;
+    border-radius: 15px;
+    font-size: 36px;
+    font-style: normal;
+    font-weight: 400;
+    line-height: normal;
+}
+.hero__img {
+    position: absolute;
+    left: 50.93%;
+    top: 24%;
+}
+
 .skills {
 }
 .skills__grid {
