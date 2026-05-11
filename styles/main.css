@@ -27,9 +27,6 @@
     --color-button-primary-bg: var(--primary-500);
     --text-dark: var(--black);
     --btn-border:var(--black)
-
-    /* Semantic Spacing - Desktop */
-
 }
 
 html {
@@ -43,17 +40,18 @@ body {
     padding: 0;
     font-family: "Poppins", sans-serif;
     color: var(--text-body);
+    font-weight: var(--Font-Weight-font-weight-regular);
 }
 h1, h2, h3, p {
     padding: 0;
     margin: 0;
 }
 h1 {
-    color: #000;
-    font-size: 64px;
-    font-style: normal;
-    font-weight: 600;
-    line-height: 64px; /* 133.333% */
+    color: var(--heading-large, #191919);
+    font-size: var(--Font-Sizes-font-size-5xl, 64px);
+    font-weight: var(--Font-Weight-font-weight-semibold, 600);
+    line-height: var(--Line-Height-line-height-large, 80px); /* 125% */
+    letter-spacing: var(--Letter-Spacing-letter-spacing-normal, 0);
 }
 h2{
     font-weight: 600;
@@ -62,11 +60,10 @@ h2{
     color: black;
 }
 h3 {
-    color: #263238;
-    font-size: 30px;
-    font-style: normal;
-    font-weight: 600;
-    line-height: 80px;
+    color: var(--card-title, #263238);
+    font-size: var(--Font-Sizes-font-size-2xl, 30px);
+    font-weight: var(--Font-Weight-font-weight-semibold, 600);
+    line-height: var(--Line-Height-line-height-large, 80px); /* 266.667% */
 }
 a {
     text-decoration: none;
@@ -74,6 +71,9 @@ a {
 }
 .btn, a {
     cursor: pointer;
+}
+.btn {
+    font-family: inherit;
 }
 a:hover {
     color: #8F95A5;
@@ -86,11 +86,10 @@ a:hover {
 }
 /* Menu */
 .header {
+    padding-top: 40px;
     display: flex;
     justify-content: space-between;
     align-items: center;
-    padding-top: 52px;
-    margin: 0 auto;
 }
 .menu {
     display: flex;
@@ -100,21 +99,20 @@ a:hover {
 .menu__container {
     display: flex;
     align-items: center;
-    justify-content: space-between;
 }
 .logo__container {
-    margin-right: 253px;
+    margin-right: 260px;
 }
 .menu__list {
     padding: 0;
-    margin-right: 204px;
+    margin-right: 240px;
 }
 .menu__list:last-child {
     padding-right: 0;
 }
 .menu__list li{
     display: inline-block;
-    margin-right: 36px;
+    margin-right: 30px;
     font-size: 20px;
     font-weight: 500;
 }
@@ -140,59 +138,68 @@ a:hover {
 }
 /* Hero */
 .hero {
-    margin-top: 113px;
+    margin-top: 118px;
+    position: relative;
 }
 .hero__wrapper {
     display: flex;
     justify-content: space-between;
     flex-direction: row;
 }
-.hero__text {
-}
 .hero__headline {
     text-transform: capitalize;
     max-width: 386px;
     width: 100%;
-    position: relative;
 }
 .mobile-break {
     display: block;
-    padding-top: 14px;
-    margin-bottom: 16px;
+    margin-bottom: 8px;
 }
 .light-img {
     position: absolute;
-    left: 34.49%;
-    top: 43%;
+    left: 700px;
+    top: 100px;
 }
 .hero__description {
-    margin-top: 48px;
-    font-size: 24px;
+    margin: 40px 0 65px 0;
+    font-size: var(--Font-Sizes-font-size-xl, 24px);
     font-style: normal;
-    font-weight: 400;
-    line-height: normal;
+    font-weight: var(--Font-Weight-font-weight-regular, 400);
     max-width: 570px;
     width: 100%;
-    margin-bottom: 65px;
 }
 .btn__header {
-    width: 438px;
-    height: 118px;
+    display: flex;
+    width: 458px;
+    padding: 32px 117px;
+    justify-content: center;
+    align-items: center;
     border-radius: 15px;
-    font-size: 36px;
-    font-style: normal;
-    font-weight: 400;
-    line-height: normal;
+    background: var(--color-button-primary-bg, #263238);
+    color: var(--text-light, #FFF);
+    font-size: var(--text__btn-hero, 36px);
+    font-weight: var(--regular, 400);
+}
+.btn__header:hover, .btn__card:hover {
+    background-color: var(--primary-800);
 }
 .hero__img {
-    position: absolute;
-    left: 50.93%;
-    top: 24%;
+    transform: translateY(-44px);
 }
 /* Skills */
 .skills {
-    margin-top: 100px;
     padding: 50px 0;
+}
+.btn__card {
+    display: inline-flex;
+    padding: var(--Spacing-space-4, 16px) var(----spacing-4xl, 48px);
+    justify-content: center;
+    align-items: center;
+    border-radius: 5px;
+    background: var(--color-button-primary-bg, #263238);
+    color: var(--text-light, #FFF);
+    font-size: var(--Font-Sizes-font-size-button, 20px);
+    font-weight: var(--Font-Weight-font-weight-medium, 500);
 }
 .skills__grid {
     display: grid;
@@ -215,22 +222,17 @@ a:hover {
     flex-direction: column;
 }
 .skills__grid-content {
-    padding-left: 23px;
-    padding-right: 35px;
+    padding: 0 35px 0 23px;
 }
 .skills__grid-image {
     max-width: 100%;
 }
 .skills__grid-description{
-    font-size: 16px;
-    font-style: normal;
+    font-size: var(--card-font-size, 16px);
     font-weight: 400;
-    line-height: normal;
+    padding-bottom: 36px;
 }
 /* Speaking */
-.speaking .skills__grid-description {
-    padding-bottom: 25px;
-}
 .skills__grid-description:nth-of-type(2) {
     max-width: 340px;
     margin-bottom: 5px;
@@ -238,57 +240,59 @@ a:hover {
 .speaking .skills__grid-image {
     margin-top: 18px;
 }
+.skills__grid-description p:not(:first-child) {
+    margin-top: 24px;
+}
+.speaking .skills__grid-content {
+    padding-bottom: 92px;
+}
 
 /* Writing */
 .skills__grid-item.writing {
     padding-top: 0;
 }
 .writing .skills__grid-image {
-    margin-left: 92px;
-    margin-top: 0;
+    margin: 0 0 0 92px;
     padding-top: 0;
     height: 252px;
-}
-.writing .skills__grid-content {
-    padding-left: 12px;
 }
 .writing .skills__grid-headline {
     max-height: 60px;
 }
 .writing .skills__grid-description {
-    margin-top: 10px;
-    margin-bottom: 31px;
+    margin-top: 8px;
 }
-.btn__card {
-
+/* Reading */
+.skills__grid-item.reading {
+    padding-top: 0;
 }
-.btn__primary {
-    width: 218px;
+.reading .skills__grid-description {
+    width: 365px;
+}
+.reading .skills__grid-headline {
     height: 60px;
-    border-radius: 5px;
-    font-weight: 500;
-    font-size: 20px;
-    line-height: 30px;
-    color: #FFFFFF;
-    border: none;
-    cursor: pointer;
-    transition: 0.3s all;
-}
-.btn__primary:hover {
-    opacity: 0.8;
+    margin-bottom: 5px;
 }
 .speaking {
     grid-area: one;
+    width: 435px;
+    height: 894px;
 }
 .writing {
     grid-area: two;
+    width: 434px;
+    height: 531px;
 }
 .reading {
     grid-area: three;
+    width: 434px;
+    height: 531px;
 }
 .listening {
     grid-area: four;
     flex-direction: row;
+    width: 885px;
+    height: 343px;
 }
 .listening .skills__grid-image {
     order: 1;
