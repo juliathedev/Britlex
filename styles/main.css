@@ -406,28 +406,61 @@ a:hover {
         margin-top: 60px;
     }
 }
-.pricing__grid-headline {
-}
-.pricing__grid-description {
-}
-
+/* Contact */
 .contact {
+    padding-top: 254px;
+}
+.contact .container {
+    display: flex;
+    flex-direction: row;
+    justify-content: space-between;
+
 }
 .contact__container-img {
+    margin-right: 99px;
 }
 .contact__img {
+    width: 477px;
+    height: 429px;
 }
 .contact__text {
-}
-.contact__headline {
+    margin-top: 36px;
 }
 .contact__description {
+    font-size: 20px;
+    font-weight: var(--Font-Weight-font-weight-regular, 400);
+    margin-top: 37px;
+    margin-bottom: 52px;
 }
 .contact__form {
+    display: flex;
+    flex-direction: row;
+    gap: 12px;
 }
-.form-example {
+input[type="text"] {
+    width: 450px;
+    height: 80px;
+    border-radius: 10px;
+    border: 1px solid #8F95A5;
+    padding-left: 26px;
+    font-size: 16px;
+    color: #8F95A5;
+    font-weight: 400;
 }
 .btn__form {
+    display: inline-flex;
+    width: 264px;
+    height: 80px;
+    justify-content: center;
+    align-items: center;
+    border-radius: 10px;
+    background: var(--btn-bg-btn, #263238);
+    color: #FFF;
+    font-size: 20px;
+    font-weight: 500;
+}
+.btn__form:hover {
+    background-color: var(--primary-800);
 }
 .footer {
 }
