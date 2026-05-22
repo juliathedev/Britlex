@@ -68,7 +68,6 @@ h3 {
 }
 a {
     text-decoration: none;
-    color: var(--primary-500);
 }
 .btn, a {
     cursor: pointer;
@@ -76,8 +75,8 @@ a {
 .btn {
     font-family: inherit;
 }
-a:hover {
-    color: #8F95A5;
+a:visited {
+    color:inherit;
 }
 .container {
     max-width: 1600px;
@@ -462,13 +461,47 @@ input[type="text"] {
 .btn__form:hover {
     background-color: var(--primary-800);
 }
+/* Footer */
 .footer {
+    margin-top: 133px;
+    margin-bottom: 64px;
+}
+.footer.container {
+    width: 1338px;
+    height: 1px;
+    background: #C4C4C4;
+}
+.footer__content {
+    padding-top: 30px;
+    display: flex;
+    flex-direction: row;
+    justify-content: space-between;
+    align-items: center;
+    vertical-align: middle;
 }
 .footer__logo {
 }
 .footer__img {
+    padding-bottom: 20px;
 }
 .footer__policy {
+    
 }
 .footer__links {
+    display: flex;
+    flex-direction: row;
+    font-size: 24px;
+    color: #8F95A5;
+}
+.footer__links a:hover {
+    color: #263238;
+}
+.footer__links li {
+    list-style: none;
+}
+.footer__links li:nth-child(2)::before,
+.footer__links li:nth-child(3)::before {
+    content: "•";
+    margin-right: 8px;
+    color: inherit;
 }
