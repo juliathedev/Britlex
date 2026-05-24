@@ -29,6 +29,9 @@
     --btn-border:var(--black);
     --button-padding-secondary-y: 16px;
     --button-padding-secondary-x: 48px;
+    --heading_large: 64px;
+    --text-body-size: 24px;
+    --text-btn-hero: 36px;
 }
 
 html {
@@ -50,7 +53,7 @@ h1, h2, h3, p {
 }
 h1 {
     color: var(--heading-large, #191919);
-    font-size: var(--Font-Sizes-font-size-5xl, 64px);
+    font-size: var(--heading_large);
     font-weight: var(--Font-Weight-font-weight-semibold, 600);
     line-height: var(--Line-Height-line-height-large, 80px); /* 125% */
     letter-spacing: var(--Letter-Spacing-letter-spacing-normal, 0);
@@ -76,6 +79,10 @@ a {
 }
 .btn {
     font-family: inherit;
+    display: inline-flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
 }
 a:visited {
     color:inherit;
@@ -128,10 +135,7 @@ a:visited {
     padding-right: 0;
 }
 .btn__secondary {
-    display: inline-flex;
-    padding: var(--button-padding-secondary-y) var(--button-padding-secondary-x);
-    justify-content: center;
-    align-items: center;
+    padding: var(--button-padding-secondary-y, 16px) var(--button-padding-secondary-x, 48px);
     border-radius: 5px;
     border: 2px solid var(--btn-border, #191919);
     color: var(--text-dark, #191919);
@@ -170,23 +174,19 @@ a:visited {
 }
 .hero__description {
     margin: 32px 0 65px 0;
-    font-size: var(--Font-Sizes-font-size-xl, 24px);
+    font-size: var(--text-body-size, 24px);
     font-style: normal;
     font-weight: var(--Font-Weight-font-weight-regular, 400);
     max-width: 570px;
     width: 100%;
 }
 .btn__header {
-    display: flex;
-    width: 458px;
     padding: 32px 117px;
-    justify-content: center;
-    align-items: center;
     border-radius: 15px;
     background: var(--color-button-primary-bg, #263238);
     color: var(--text-light, #FFF);
-    font-size: var(--text__btn-hero, 36px);
-    font-weight: var(--regular, 400);
+    font-size: var(--text-btn-hero, 36px);
+    font-weight: var(--Font-Weight-font-weight-regular, 400);
 }
 .btn__header:hover, .btn__card:hover {
     background-color: var(--primary-800);
@@ -199,10 +199,7 @@ a:visited {
     padding: 50px 0;
 }
 .btn__card {
-    display: inline-flex;
     padding: var(--Spacing-space-4, 16px) var(----spacing-4xl, 48px);
-    justify-content: center;
-    align-items: center;
     border-radius: 5px;
     background: var(--color-button-primary-bg, #263238);
     color: var(--text-light, #FFF);
@@ -453,11 +450,8 @@ input[type="text"] {
     font-weight: 400;
 }
 .btn__form {
-    display: inline-flex;
     width: 264px;
     height: 80px;
-    justify-content: center;
-    align-items: center;
     border-radius: 10px;
     background: var(--btn-bg-btn, #263238);
     color: #FFF;
@@ -507,11 +501,20 @@ input[type="text"] {
     color: inherit;
 }
 @media screen and (max-width: 992px) {
+        :root {
+            --button-padding-secondary-y: 12px;
+            --button-padding-secondary-x: 40px;
+            --heading_large: 48px;
+            --Line-Height-line-height-large: 60px;
+            --text-body-size: 20px;
+            --text-btn-hero: 24px;
+        }
         .container {
             max-width: 992px;
             width: 100%;
             padding: 0 30px;
             margin: 0 auto;
+            outline: 2px solid red;
         }
         .menu__container {
             max-width: 934px;
@@ -519,7 +522,7 @@ input[type="text"] {
             justify-content: space-between;
         }
         .logo__container {
-            margin-right: 107px;
+            margin-right: 130px;
         }
         .header__logo {
             width: 89px;
@@ -533,6 +536,27 @@ input[type="text"] {
         }
         .btn__secondary {
             font-size: 18px;
-            padding: var(--button-padding-secondary-y, 12px) var(--button-padding-secondary-x, 40px);
+        }
+        .hero {
+            margin-top: 70px;
+        }
+        .hero__description {
+            max-width: 524px;
+            margin: 32px 0 32px 0;
+        }
+        .hero__img {
+            width: 455px;
+            height: 460px;
+            transform: translateY(-14px);
+        }
+        .light-img {
+            left: 340px;
+            top: 100px;
+            width: 62px;
+            height: 62px;
+        }
+        .btn__header {
+            padding: 22px 78px;
+            border-radius: 5px;
         }
 }
