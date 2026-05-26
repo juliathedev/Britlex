@@ -51,16 +51,21 @@
     --btn-border: var(--black);
     --heading: var(--black);
     --card-title: var(--primary-500);
+    --stat-number-color: #263238;
     --button-padding-secondary-x: var(--space-9);
     --button-padding-secondary-y: var(--space-4);
     /* --- Semantic Typography --- */
     --heading-large: var(--font-size-5xl);
     --heading-medium: var(--font-size-4xl);
     --heading-light: var(--font-size-2xl);
+    --text-body-large: var(--font-size-xl);
+    --text-body-medium: var(--font-size-lg);
+    --stat-number-size: var(--font-size-4xl);
+    --stat-number-line-height: var(--line-height-large);
     --heading-large-line-height: var(--line-height-large);
     --card-font-size: var(--font-size-base);
     --card-line-height: var(--line-height-normal);
-    --text-body-size: 24px;
+
     --text-btn-hero: 36px;
 }
 
@@ -75,7 +80,7 @@ body {
     padding: 0;
     font-family: "Poppins", sans-serif;
     color: var(--text-body);
-    font-weight: 400;
+    font-weight: var(--font-weight-regular);
 }
 h1, h2, h3, p {
     padding: 0;
@@ -120,6 +125,9 @@ a:visited {
     width: 100%;
     padding: 0 130px;
     margin: 0 auto;
+}
+.description {
+    font-size: var(--text-body-medium);
 }
 /* Menu */
 .header {
@@ -202,7 +210,7 @@ a:visited {
 }
 .hero__description {
     margin: 32px 0 65px 0;
-    font-size: var(--text-body-size, 24px);
+    font-size: var(--text-body-large);
     font-style: normal;
     font-weight: var(--Font-Weight-font-weight-regular, 400);
     max-width: 570px;
@@ -354,7 +362,7 @@ a:visited {
 }
 /* About us */
 .about_us {
-    margin-top: 232px;
+    margin-top: 240px;
 }
 .about_us-container {
     display: flex;
@@ -362,11 +370,11 @@ a:visited {
     flex-direction: row;
 }
 .about__description {
-    font-size: 20px;
-    font-weight: var(--Font-Weight-font-weight-regular, 400);
+    font-size: var(--text-body-medium);
+    font-weight: var(--font-weight-regular);
     max-width: 635px;
     width: 100%;
-    padding-top: 23px;
+    padding-top: 27px;
 }
 .about__grid {
     display: grid;
@@ -376,9 +384,10 @@ a:visited {
     justify-items: start;
 }
 .about__grid-num {
-    color: #2A3246;
-    font-size: 48px;
-    font-weight: var(--Font-Weight-font-weight-semibold, 600);
+    color: var(--stat-number-color);
+    font-size: var(--stat-number-size);
+    font-weight: var(--font-weight-semibold);
+    line-height: var(--stat-number-line-height);
 }
 .about__grid-nums {
     display: flex;
